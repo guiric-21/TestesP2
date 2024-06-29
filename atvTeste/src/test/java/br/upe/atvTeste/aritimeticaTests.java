@@ -10,4 +10,12 @@ public class aritimeticaTests {
     void testSubtract( ) {
         assertEquals(2,aritimetica.subtract(5,3));
     }
+    @Test
+    void testMultiply() {
+        assertEquals(15,aritimetica.multiply(5,3));
+    }
+    @Test
+    void testDivide( ) {
+        assertEquals(4,aritimetica.divide(8,2));
+    }
 }
