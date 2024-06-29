@@ -18,4 +18,12 @@ public class aritimeticaTests {
     void testDivide( ) {
         assertEquals(4,aritimetica.divide(8,2));
     }
+    @Test
+    void testModulo( ) {
+        assertEquals(2,aritimetica.modulo(5,3) );
+    }
+    @Test
+    void testExponent( ) {
+        assertEquals(125,aritimetica.exponent(5,3));
+    }
 }

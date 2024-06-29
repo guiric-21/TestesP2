@@ -20,9 +20,22 @@ public class aritimetica {
     public static int divide(int intDividend, int intDivisor) {
         return intDividend / intDivisor;
     }
+
+    public static int modulo(int intDividend, int intDivisor) {
+        return intDividend % intDivisor;
+    }
+    public static int exponent(int base, int power) {
+        return (int) Math.pow(base, power);
+    }
     public static void main(String[] args) {
         int intNumA = 5;
         int intNumB = 3;
-
+        System.out.println(intNumA + " + " + intNumB + " = " + add(intNumA,intNumB));
+        System.out.println(intNumA + " - " + intNumB + " = " + subtract(intNumA,intNumB));
+        System.out.println(intNumA + " x " + intNumB + " = " + multiply(intNumA,intNumB));
+        System.out.println(intNumA + " x " + intNumB + " = " + multiply(intNumA,intNumB));
+        System.out.println(intNumA + " " + (char)247 + " " + intNumB + " = "+ divide(intNumA,intNumB));
+        System.out.println(intNumA + " mod " + intNumB + " = " + modulo(intNumA, intNumB));
+        System.out.println(intNumA + " to the power of " + intNumB + " = " + exponent (intNumA, intNumB));
     }
 }
