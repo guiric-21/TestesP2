@@ -61,14 +61,26 @@ public class aritimeticaTests {
         assertEquals(bdNumJ, aritimetica.divide(bdNumE,bdNumF,10, rmHalfUp));
 
     }
-    /*@Test
+    @Test
     void testExpoentFloat(){
-        assertEquals(165.81, dFormat.format(aritimetica.exponent(5.2,3.1)));
+        assertEquals(165.80986483300362, aritimetica.exponent(5.2,3.1));
 
     }
-    */
+    @Test
+    void testSquareRoot(){
+        assertEquals(2.280350850198276, aritimetica.squareRoot(5.2));
 
+    }
+    @Test
+    void testCubeRoot(){
+        assertEquals(1.7324782106818055, aritimetica.cubeRoot(5.2));
 
+    }
+    @Test
+    void testAbsoluteValue(){
+        assertEquals(9,aritimetica.absoluteVal(-9));
+
+    }
 
 
 
