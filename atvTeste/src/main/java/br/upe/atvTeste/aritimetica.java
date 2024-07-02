@@ -86,8 +86,8 @@ public class aritimetica {
         int intNumA = 5;
         int intNumB = 3;
         RoundingMode rmHalfUp = RoundingMode.HALF_UP;
-        BigDecimal bdNumE = new BigDecimal (5.2).setScale(1, rmHalfUp);
-        BigDecimal bdNumF = new BigDecimal (3.1).setScale(1, rmHalfUp);
+        BigDecimal bdNumE = new BigDecimal (0.1).setScale(1, rmHalfUp);
+        BigDecimal bdNumF = new BigDecimal (0.2).setScale(1, rmHalfUp);
         double dbNumbC = 5.2;
         double dbNumbD = 3.1;
         DecimalFormat dFormat = new DecimalFormat("#, ###.###");
@@ -96,10 +96,10 @@ public class aritimetica {
         System.out.println(bdNumE + " - " + bdNumF + " = " + subtract(bdNumE,bdNumF));
         System.out.println(bdNumE + " x " + bdNumF + " = " + multiply(bdNumE,bdNumF));
         System.out.println(bdNumE + " " + (char)247 + " " + bdNumF + " = "+ divide(bdNumE, bdNumF, 10, rmHalfUp));
-        System.out.println(dbNumbC + " to the power of " + dbNumbD + " = " + dFormat.format(exponent(dbNumbC,dbNumbD)));
-        System.out.println("The sguare root of " + dbNumbC + " = " + dFormat.format(squareRoot(dbNumbC)));
-        System.out.println("The cube root of " + dbNumbC + " = " + dFormat.format(cubeRoot(dbNumbC)));
-        System.out.println("The absolute value of " + dbNumbC + " = "  +  dFormat.format(absoluteVal(dbNumbC)));
+        System.out.println(dbNumbC + " to the power of " + dbNumbD + " = " + exponent(dbNumbC,dbNumbD));
+        System.out.println("The sguare root of " + dbNumbC + " = " + squareRoot(dbNumbC));
+        System.out.println("The cube root of " + dbNumbC + " = " + cubeRoot(dbNumbC));
+        System.out.println("The absolute value of " + dbNumbC + " = "  +  absoluteVal(dbNumbC));
 
 
         System.out.println(intNumA + " + " + intNumB + " = " + add(intNumA,intNumB));
